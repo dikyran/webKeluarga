@@ -1,0 +1,1364 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- ========== FAVICON =================== -->
+    <link rel="shortcut icon" href="moment1.jpg" type="image/x-icon" />
+
+    <!-- ================= BOXICONS ======================= -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet" />
+
+    <!-- ====================== SWIPER CSS ===================== -->
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+    <!-- ============================= CSS =================-->
+    <link rel="stylesheet" href="styles.css" />
+
+    <title>Responsive Portofolio website Diky</title>
+  </head>
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Keluarga Besar Op.Ernest</a>
+        <audio controls>
+          <source src="Ed Sheeran - Dive [Official Audio].mp3" type="audio/mpeg" />
+        </audio>
+
+        <div class="nav__menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="bx bx-home-alt"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="bx bx-user"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="bx bx-book"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#work" class="nav__link">
+                <i class="bx bx-briefcase"></i>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="bx bx-message-square-detail"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <!-- Theme change button -->
+        <i class="bx bx-moon change-theme" id="theme-button"></i>
+      </nav>
+    </header>
+
+    <!-- =========== MAIN ================= -->
+    <main class="main">
+
+    <!-- ==== HOME ===== -->
+    <section class="home section" id="home">
+      <div class="home__container container grid">
+        <div class="home__data">
+          <span class="home__gretting">Wellcome To</span>
+          <h1 class="home__name">Our Family</h1>
+          <h3 class="home__education">developed by Diky Arianto Tarihoran</h3>
+
+          <div class="home__buttons">
+            <a href="CV diky.pdf" class="button button--ghost">
+              Download Photo
+            </a>
+            <a href="#about" class="button">About Us</a>
+          </div>
+        </div>
+        <div class="home__handle">
+          <img src="diky1.jpg" alt="" class="home__img" />
+        </div>
+
+        <div class="home__social">
+          <a
+            href="https://www.instagram.com/dikyariantotarihoran/" target="_blank"
+            class="home__social-link">
+            <i class="bx bxl-instagram"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/diky.a.tarihoran" target="_blank"
+            class="home__social-link">
+            <i class="bx bxl-facebook-circle"></i>
+          </a>
+
+          <a
+            href="https://www.youtube.com/channel/UC15n75R90-a2bM8o2L_0XXA" target="_blank"
+            class="home__social-link">
+            <i class="bx bxl-youtube"></i>
+          </a>
+        </div>
+
+        <a href="#about" class="home__scroll">
+          <i class="bx bx-mouse home__scroll-icon"></i>
+          <span class="home__scroll-name">Scroll Down</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- =========== ABOUT =============== -->
+    <section class="about section" id="about">
+      <span class="section__subtitle">Our Intro</span>
+      <h2 class="section__title">About Us</h2>
+
+      <div class="about__container container grid">
+        <img src="moment1.jpg" alt="" class="about__img" />
+
+        <div class="about__data">
+          <div class="about__info">
+            <div class="about__box">
+              <i class="bx bx-notepad about__icon"></i>
+              <h3 class="about__title">Anniversary day</h3>
+              <span class="about__subtitle">28 Agustus 2022</span>
+            </div>
+
+            <div class="about__box">
+              <i class="bx bx-briefcase-alt about__icon"></i>
+              <h3 class="about__title">Hubungan</h3>
+              <span class="about__subtitle">Forever</span>
+            </div>
+
+            <div class="about__box">
+              <i class="bx bx-support about__icon"></i>
+              <h3 class="about__title">Support</h3>
+              <span class="about__subtitle">Online 24/7</span>
+            </div>
+          </div>
+
+          <p class="about__description">
+            Selamat datang di Gallery Keluarga Besar Op.Ernest <br/>
+            Website ini bertujuan untuk menyimpan beberapa kenangan keluarga.
+            Website ini berisikan foto serta keterangan Keluarga besar 
+            Op.Ernest dan yang tidak disukai. Kita juga membuat beberapa impian kita di 
+            masa yang akan datang. 
+          </p>
+
+          <a href="#contact" class="button">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+
+    
+<!-- ===================== WORK ================================ -->
+<section class="work section" id="work">
+  <span class="section__subtitle">Profil</span>
+  <h2 class="section__title">Anggota Keluarga</h2>
+
+  <div class="work__filters">
+    <span class="work__item active-work" data-filter='all'>All</span>
+    <span class="work__item" data-filter='.orangtua'>Orang Tua</span>
+    <span class="work__item" data-filter='.anak'>Anak</span>
+    <span class="work__item" data-filter='.cucu'>Cucu</span>
+    <span class="work__item" data-filter='.menantu'>Menantu</span>
+  </div>
+
+  <!-- ==================DIKY ARIANTO TARIHORAN=====================-->
+  <div class="work__container container grid">
+    <div class="work__card mix anak">
+      <img src="diky1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Diky Arianto Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <img src="diky1.jpg" alt="" class="work__img">
+          <img src="edrea1.jpg" alt="" class="work__img">
+          <img src="edrea&ernest1.jpg" alt="" class="work__img">
+          <img src="edrea&ernest1.jpg" alt="" class="work__img">
+          <img src="edrea&ernest1.jpg" alt="" class="work__img">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+     <!-- ==================Yuda Febrianto Tarihoran=====================-->
+    <div class="work__card mix anak">
+      <img src="yuda2.jpg" alt="" class="work__img">
+      <h3 class="work__title">Yuda Febrianto Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Yuda Febrianto Tarihoran </br>
+           Umur: 21 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, ini adalah abang saya Yuda Febrianto Tarihoran. Sekarang dia sedang menempuh perkuliahan di Universitas Negeri Medan, jurusan Pendidikan teknik Otomotif. Dia dikenal dengan nama sebutan Juten
+          dikeluarga saya. Dia termasuk tipe cowo yang ideal bagi semua wanita, itulah alasannya disebut dengan julukan Playboy. Dia adalah cogan no.2 dikeluarga saya, karena cogan no.1 nya Diky
+          Arianto Tarihoran.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+<!-- ==================Linceria Nababan=====================-->
+<div class="work__card mix orangtua">
+  <img src="mama.jpg" alt="" class="work__img">
+  <h3 class="work__title">Linceria Nababan</h3>
+  <span class="services__button">
+    see more <i class="bx bx-right-arrow-alt services__icon"></i>
+  </span>
+  <div class="services__modal">
+    <div class="services__modal-content">
+      <i class='bx bx-x services__modal-close'></i>
+      <h3 class="services__modal-title">Profil</h3>
+      <p class="services__modal-description">
+       Nama: Linceria Nababan </br>
+       Umur: 59 Tahun </br>
+       Status: Berkeluarga </br>
+      </br>
+      Hai, ini adalah Ibu saya, ibu terbaik di dunia. Dia berprofesi sebagai Pegawai Negeri Sipil (PNS) sejak tahun 1986. Tanggal 8 Mei 1989 dia menikah dengan Pria idamannya yang bernama 
+      Margon Tarihoran. Saat awal terbentuknya keluarga ini, Orang tua saya tinggal di Manduamas. Tahun 1991 mereka pindah rumah ke Unteboang. Hingga Sampai tahun 1993, akhirnya 
+      keluarga ini menetap dan tinggal di Sibintang. Pada tanggal 11 Juli 1990, mereka dikaruniai abak pertama yang diberi nama Entro Tarihoran.
+      </p>
+    </div>
+  </div>
+</div>
+
+
+    <!-- ==================Ernest de Azriel Tarihoran=====================-->
+    <div class="work__card mix cucu">
+      <img src="ernest3.jpg" alt="" class="work__img">
+      <h3 class="work__title">Ernest de Azriel Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Ernest de Azriel Tarihoran </br>
+           Umur: 5 Tahun </br>
+           Status: Bocil </br>
+          </br>
+          Ini adalah keponakan pertama saya, sekaligus menjadi cucu pertama di keluarga ini. Dia termasuk tipe anak yang cukup riang serta punya energi semangat yang tinggi saat 
+          bermain dengan teman-temannya serta dengan anggota keluarga lain. Dia merupakan anak yang cerdas dan termasuk sangat aktif saat melakukan suatu kegiatan. Orang-orang sangat
+          menyukai keponakan saya yang satu ini karena mudah bergaul dan terbuka bagi orang yang baru dia kenal.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+
+    <!-- ==================Dwi Verasasti Tarihoran=====================-->
+    <div class="work__card mix anak">
+      <img src="dwi1.jpg" alt="" class="work__img">
+      <h3 class="work__title">Dwi Verasasti Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- ==================Rida Tarihoran=====================-->
+    <div class="work__card mix anak">
+      <img src="rida1.jpg" alt="" class="work__img">
+      <h3 class="work__title">Rida Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+
+         <!-- ==================Edrea Leta de Lethesia Tarihoran=====================-->
+    <div class="work__card mix cucu">
+      <img src="edrea1.jpg" alt="" class="work__img">
+      <h3 class="work__title">Edrea Leta de Lethesia Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- ==================Astry Novita Tarihoran=====================-->
+    <div class="work__card mix anak">
+      <img src="astry1.jpg" alt="" class="work__img">
+      <h3 class="work__title">Astry Novita Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- ==================Entro Tarihoran=====================-->
+    <div class="work__card mix anak">
+      <img src="keluarga-entro1.jpg" alt="" class="work__img">
+      <h3 class="work__title">Entro Tarihoran</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================Hendri=====================-->
+    <div class="work__card mix menantu">
+      <img src="hendri2.jpg" alt="" class="work__img">
+      <h3 class="work__title">Hendri</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+        </div>
+      </div>
+    </div>
+
+<!-- ==================Sartika Tarihoran=====================-->
+<div class="work__card mix anak">
+  <img src="sartika1.jpg" alt="" class="work__img">
+  <h3 class="work__title">Sartika Tarihoran</h3>
+  <span class="services__button">
+    see more <i class="bx bx-right-arrow-alt services__icon"></i>
+  </span>
+  <div class="services__modal">
+    <div class="services__modal-content">
+      <i class='bx bx-x services__modal-close'></i>
+      <h3 class="services__modal-title">Profil</h3>
+      <p class="services__modal-description">
+       Nama: Diky Arianto Tarihoran </br>
+       Umur: 20 Tahun </br>
+       Status: Berpacaran </br>
+      </br>
+      Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+      Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+      Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ==================Dosman Sitinjak=====================-->
+<div class="work__card mix menantu">
+  <img src="dosman.jpg" alt="" class="work__img">
+  <h3 class="work__title">Dosman Sitinjak</h3>
+  <span class="services__button">
+    see more <i class="bx bx-right-arrow-alt services__icon"></i>
+  </span>
+  <div class="services__modal">
+    <div class="services__modal-content">
+      <i class='bx bx-x services__modal-close'></i>
+      <h3 class="services__modal-title">Profil</h3>
+      <p class="services__modal-description">
+       Nama: Diky Arianto Tarihoran </br>
+       Umur: 20 Tahun </br>
+       Status: Berpacaran </br>
+      </br>
+      Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+      Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+      Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+      </p>
+    </div>
+  </div>
+</div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- ============= SKILS =============== -->
+    <section class="skills section" id="skills">
+      <span class="section__subtitle">Our Opinon</span>
+      <h2 class="section__title">Awal bertemu</h2>
+
+      <div class="skills__container container grid">
+        <div class="skills__content">
+          <h3 class="skills__title">Dinda's Opinion</h3>
+          <div class="skills__box">
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="about-label"></i>
+                <div>   
+                  <p class="services__modal-description">Hai, nama saya Dinda Nazwa Tinambunan. Saya berumur 18 tahun.
+                    Dikeluarga saya, saya sering dipanggil dengan sebutan Dindot. Saya tipe orang yang suka 
+                    bad mood-an. Dulu cita-cita saya ialah seorang suster, tapi setelah seseorang datang dikehidupan 
+                    saya, saya sadar bahwa saya butuh sebuah penyemangat hidup yang selalu ada. Namun, saya dulu menyianyiakan
+                    perasaannya, tetapi pada suatu ketika, saya menembaknya melalui Instagram, alhasil dengan berat hati diapun
+                    menerima saya sebagai pacarnya. <br/>
+                    Sekian dan terima kasih :).
+                  </p>
+                </div>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          <div class="skills__content">
+            <h3 class="skills__title">Diky's Opinion</h3>
+            <div class="skills__box">
+              <div class="skills__group">
+                <div class="skills__data">
+                  <i class="about-label"></i>
+                  <div>   
+                    <p class="services__modal-description">Hai, Nama saya Diky Arianto Tarihoran. Saya berumur 19 tahun. Saya suka wanita yang bernama Dinda :)
+                      Awal kami bertemu itu saat natal tahun 2020. Namun pada saat itu kami belum saling mengenal. Hingga, pada 11 November 2021 saya mulai melakukan
+                      pendekatan dengannya, karena dia Manis dan Cantik :^ ( Jangan geer ya 😘). Tapi saat aku mengungkapkan perasaan tanggal 30 Desember 2021 tepat 1 Tahun
+                      setelah pembuatan website ini dia menolak saya, dengan alasan fokus belajar :^ dan masih sekolah. Tapi pada saat itu (katanya), dia sangat menunggu chat dan perhatian
+                      saya. Hingga pada bulan Agustus lalu, dia mengungkapkan perasaannya. Dan akhirnya dengan berat hati saya menerimanya sebagai pacar saya😚.
+                      <br/> Sekian dan terima kasih :).
+                    </p>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div>
+      </div>
+    </section>
+
+    <!-- ============= SERVICE ============= -->
+    <section class="services section">
+      <span class="section__subtitle">Our Letters</span>
+      <h2 class="section__title">DIKY LETTER <br/> 🐻 </h2>
+
+      <div class="services__container container grid">
+        <div class="services__card">
+          <h3 class="services__title">
+            Merry Christmas <br/> Letters </br> 1
+          </h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">Selamat Natal </br> My Panda</h3>
+              <p class="services__modal-description">
+                Hai pacar ku Dinda Nazwa Tinambunan, selamat hari Natal ya Tuhan Yesus memberkati. Gak terasa ya yang udah setahun sejak ngucapin selamat tahun baru kemarin, walaupun aku terlalu berharap darimu waktu itu hahaha :) tapi sekarang udah terwujud. Tau gak, hal pertama yang buat aku tertarik lihat dari kamu itu (first impression) karena kamu manis, dan gak norak atau pengen cari perhatian sama orang. Dan setelah aku ngechat kamu pertama kali itu, kamu orangnya asik benget walaupun gak bisa berharap lebih dibales cepat. Jujur, setelah pacaran 4 bulan belum pernah ngerasain bosan sama sekali, kadang ada momen yang bikin aku kesal banget sama kamu, tapi kayaknya hal itu udah biasa dalam sebuah hubungan dan mungkin jadi cara agar makin peduli. 
+
+Tau gak yang, Waktu pertama pacaran sama Paima itu beda banget, hal yang membuat kalian beda banget dari cara komunikasi nya dan cara ngejawab kalo aku nanyain sesuatu. Aku tau kamu gak suka dibandingin, tapi ini beneran. Aku juga sering banget nge-bandingin kamu sama paima, terutama soal cantikan mana kamu atau dia. Si Yuda sama Junedi selalu ngomong cantikan kamu. Ini aku gak melebih-lebihkan biar kamu tersanjung ya tapi Ini beneran.
+
+Sewaktu bulan Maret kemarin, waktu aku nembak kamu untuk kedua kalinya. Aku udah pasrah dan udah janji sama diri aku sendiri biar gak ada lagi komunikasi dan sampai ngeblok IG kamu 2 kali :) tapi tau gak yang walaupun aku block, aku selalu bolak balik ngeliat kamu online atau nggak di IG hampir setiap hari, mungkin setiap aku buka hp aku selalu nyempetin bukain IG CUMAN liat kamu online atau nggak.  Perasaan aku waktu kamu online itu rasanya nyesek banget, nyeseknya gak tau karena apa, tapi jujur aku masih berharap banget sewaktu itu, bahkan sampai ngestalk IG sekolahmu sama teman-temanmu hanya karena pengen liat kamu udah ada pacar atau belum.
+
+Percaya atau nggak, aku udah 2 kali nangis deh selama gak ada chattingan. Sambil ngedengerin lagu Locked away, kedengaran nya agak lebay kan yang, tapi ini yang aku rasain selama itu. Bahkan kak vera juga liat aku bertingkah gak kayak biasanya, kayak heran gitu dia. Terus Alesan aku selalu ngomong "Jangan pernah bosan" karena aku pengen nguji kamu beneran sayang gak, aku pengen banget diperhatiin lebih dan gak mau ngerasain sewaktu pdkt-an waktu itu hahaha. Makanya sewaktu aku ngechat kamu, kalo kamu ada notif online di IG, itu rasanya kesal banget deh. Makanya aku langsung telpon. Aku tau ini berlebihan dan aku juga gak bisa nahan diri.
+
+Harapan aku selama berhubungan ditahun depan simple aja, komunikasi lanjut terus. Setidaknya nanya kabar atau ceritain sesuatu keluh kamu kayak gimana. Karena kalo gak ada komunikasi lagi, itu sama aja udah putus secara tidak langsung. Menurut ku hal pertama dalam pacaran itu komunikasi, kalo berkomunikasi aja udah ada rasa bosan gimana cara ngelanjutin hubungan nya?? Inilah resiko kalo LDR-an, dan bagiku LDR-an itu gak ada sama sekali masalah samaku kalo kita masih saling sayangg. Bahkan tanggal 23 kemarin kan yang aku ada nanya iseng-iseng gitu ke mama sambil becanda, tentang tipe calon parumaen/ menantu mama itu kayak gimana. Dan mungkin untuk jawaban yang ini tahun depan aja ya terlalu kecepatan momennya hehehe.
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+
+        <div class="services__card">
+          <h3 class="services__title">
+            Merry Christmas </br> Letters </br> 2
+          </h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">Selamat Natal </br> My Panda</h3>
+              <p class="services__modal-description">
+                Terus hal yang paling aku suka dari kamu itu selain manis dan cantik tentunya, cara ngejawab pertanyaan setiap aku nanya. Aku gak tau cara ngejelasin nya kayak gimana. Dan karena ini juga yang bikin aku gak pernah bosan sama kamu, makanya alesan aku putus sama paima waktu itu karena ini juga, kayak percakapannya monoton terus dan pembahasannya cuman nanyain kapan pulang, aku kangen dan cewe-cewe disini kayak gimana, cantik atau enggak. Kurang lebih kayak gitu deh pembahasannya.
+
+Terus yang paling aku gak suka dari kamu itu kebiasaan kamu yang suka banget bikin penasaran, kalo ditanya harus diulangi terus. Baru rasa cueknya juga, rasa egoisnya juga ada. Disatu sisi juga aku kadang maksa banget orang nya ngotot pengen nelpon, mungkin aku juga gak tau apa yang lagi kamu kerjain dirumah. Tapi kalo sering ketemuan, pasti ada deh yang lebih aku suka dari kamu itu. 
+
+Ehh yang kamu masih ingat gak ucapan terakhir aku sewaktu tahun baru kemarin itu, tentang utbk itu. Nah harapan ku samamu juga sama kayak yang dulu, tapi kalo sekarang aku ngotot kamu harus lulus ya, percuma kalo menyesalnya nanti.
+
+Mungkin itu doang yang bisa aku ucapin, semisalnya kalo kelupaan waktu nulis ini nanti aku kasih tau lagi. Dan 1 permintaan terakhirku yang, kamu jangan terlalu friendly/terbuka sama orang-orang ya terutama cowo. aku pengen kamu secuek-cueknya sama cowo apalagi ngomong perasaan. aku ngomong gini bukan karena aku ngelarang kamu buat bersosialisasi sama orang lain, karena kalo udah ngomongin perasaan sama orang lain rasanya percuma deh kita pacaran dari awal. Dan kalo emang kamu lagi marah dan kesal banget sama aku, ngomong aja. kalo emang perlu marahin atau bentak atau ngomong kasar pun bisa, karena lebih baik bertengkar tapi komunikasi lanjut daripada diam-diaman terus.
+
+Selamat natal ya sayangku, my panda. Muaachh <3.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        
+
+        <div class="services__card">
+          <h3 class="services__title">Birthday </br> Letters</h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">Ucapan Ulang Tahun</h3>
+              <p class="services__modal-description">
+                ISI KARTU UCAPAN <br/>
+                Dari : Mas pacar:')<br/>
+                Kepada: Dinda cantik <br/>
+                Hbd sayang:), di umur yang udah bertambah semoga menjadi pribadi yang baik dan lebih dewasa yaa terutama buat orang tua, semua harapan mu Tuhan berkati ya sayang. Ini doang yang bisa aku kasih yaa sebagai ucapan ulang tahun. I love you..❤️
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="services__card">
+          <h3 class="services__title">New Year </br> Letters</h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">Surat Resmi :) </h3>
+              <p class="services__modal-description">
+                Selamat tahun baru Dinda🎉, ehh aku pengen ngucapin sesuatu nih hehe. Sekali kali alay sama lebay gpp ya😂. 
+                Jujur aku suka sama mu mungkin lu udah tau lah ya. Doodle yang kemarin itu emang tulus dariku. tau gak tanggal 
+                25 kemarin pas Minggu natal siang aku kan berdoa, salah satu doa ku tuh pengen penghiburan. Ehh pas sore nya lu 
+                ngechat selamat natal kan waktu itu, aku ngerasa udah terkabul doa ku itu. Waktu kau chat waktu itu aku kira itu
+                feedback yang kau kasih karena aku buat Doodle nya ternyata enggak. Terus kan Pengen nya kan aku sendiri tuh yang 
+                kasih samamu biar enakan gitu 😅, ehh malah opname pula abngku. aku bersyukur sih bisa kenalan sama mu. Hmm mungkin
+                itu aja sih yang bisa aku share. Kecapean ngetik hehe. Satu lagi, aku pengen ucapin semoga sukses di ujian nanti ya, 
+                pokoknya belajar mati" an nanti ya sampai bisa lulus negeri. Jangan nyesal di akhir gak bakal guna nantinya hehehe. 🙏❤️
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+
+    <!-- =================================== DINDA LETTER =================-->
+    <section class="services section">
+      <span class="section__subtitle">Our Letters</span>
+      <h2 class="section__title">DINDA LETTER <br/> 🐼</h2>
+
+      <div class="services__container container grid">
+        <div class="services__card">
+          <h3 class="services__title">
+            Merry Christmas </br> Letters
+          </h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">Merry Christmas</br> Letters</h3>
+              <p class="services__modal-description">
+                Hai pacar ku Dinda Nazwa Tinambunan, selamat hari Natal ya Tuhan Yesus memberkati. Gak terasa ya yang udah setahun sejak ngucapin selamat tahun baru kemarin, walaupun aku terlalu berharap darimu waktu itu hahaha :) tapi sekarang udah terwujud. Tau gak, hal pertama yang buat aku tertarik lihat dari kamu itu (first impression) karena kamu manis, dan gak norak atau pengen cari perhatian sama orang. Dan setelah aku ngechat kamu pertama kali itu, kamu orangnya asik benget walaupun gak bisa berharap lebih dibales cepat. Jujur, setelah pacaran 4 bulan belum pernah ngerasain bosan sama sekali, kadang ada momen yang bikin aku kesal banget sama kamu, tapi kayaknya hal itu udah biasa dalam sebuah hubungan dan mungkin jadi cara agar makin peduli. 
+
+Tau gak yang, Waktu pertama pacaran sama Paima itu beda banget, hal yang membuat kalian beda banget dari cara komunikasi nya dan cara ngejawab kalo aku nanyain sesuatu. Aku tau kamu gak suka dibandingin, tapi ini beneran. Aku juga sering banget nge-bandingin kamu sama paima, terutama soal cantikan mana kamu atau dia. Si Yuda sama Junedi selalu ngomong cantikan kamu. Ini aku gak melebih-lebihkan biar kamu tersanjung ya tapi Ini beneran.
+
+Sewaktu bulan Maret kemarin, waktu aku nembak kamu untuk kedua kalinya. Aku udah pasrah dan udah janji sama diri aku sendiri biar gak ada lagi komunikasi dan sampai ngeblok IG kamu 2 kali :) tapi tau gak yang walaupun aku block, aku selalu bolak balik ngeliat kamu online atau nggak di IG hampir setiap hari, mungkin setiap aku buka hp aku selalu nyempetin bukain IG CUMAN liat kamu online atau nggak.  Perasaan aku waktu kamu online itu rasanya nyesek banget, nyeseknya gak tau karena apa, tapi jujur aku masih berharap banget sewaktu itu, bahkan sampai ngestalk IG sekolahmu sama teman-temanmu hanya karena pengen liat kamu udah ada pacar atau belum.
+
+Percaya atau nggak, aku udah 2 kali nangis deh selama gak ada chattingan. Sambil ngedengerin lagu Locked away, kedengaran nya agak lebay kan yang, tapi ini yang aku rasain selama itu. Bahkan kak vera juga liat aku bertingkah gak kayak biasanya, kayak heran gitu dia. Terus Alesan aku selalu ngomong "Jangan pernah bosan" karena aku pengen nguji kamu beneran sayang gak, aku pengen banget diperhatiin lebih dan gak mau ngerasain sewaktu pdkt-an waktu itu hahaha. Makanya sewaktu aku ngechat kamu, kalo kamu ada notif online di IG, itu rasanya kesal banget deh. Makanya aku langsung telpon. Aku tau ini berlebihan dan aku juga gak bisa nahan diri.
+
+Harapan aku selama berhubungan ditahun depan simple aja, komunikasi lanjut terus. Setidaknya nanya kabar atau ceritain sesuatu keluh kamu kayak gimana. Karena kalo gak ada komunikasi lagi, itu sama aja udah putus secara tidak langsung. Menurut ku hal pertama dalam pacaran itu komunikasi, kalo berkomunikasi aja udah ada rasa bosan gimana cara ngelanjutin hubungan nya?? Inilah resiko kalo LDR-an, dan bagiku LDR-an itu gak ada sama sekali masalah samaku kalo kita masih saling sayangg. Bahkan tanggal 23 kemarin kan yang aku ada nanya iseng-iseng gitu ke mama sambil becanda, tentang tipe calon parumaen/ menantu mama itu kayak gimana. Dan mungkin untuk jawaban yang ini tahun depan aja ya terlalu kecepatan momennya hehehe.
+
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="services__card">
+          <h3 class="services__title">Birthday </br> Letters</h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">Ucapan Ulang Tahun</h3>
+              <p class="services__modal-description">
+                ISI KARTU UCAPAN <br/>
+                Dari : Mas pacar:')<br/>
+                Kepada: Dinda cantik <br/>
+                Hbd sayang:), di umur yang udah bertambah semoga menjadi pribadi yang baik dan lebih dewasa yaa terutama buat orang tua, semua harapan mu Tuhan berkati ya sayang. Ini doang yang bisa aku kasih yaa sebagai ucapan ulang tahun. I love you..❤️
+              </p>
+
+
+            </div>
+          </div>
+        </div>
+        <div class="services__card">
+          <h3 class="services__title">New Year </br> Letters</h3>
+          <span class="services__button">
+            see more <i class="bx bx-right-arrow-alt services__icon"></i>
+          </span>
+
+          <div class="services__modal">
+            <div class="services__modal-content">
+              <i class='bx bx-x services__modal-close'></i>
+
+              <h3 class="services__modal-title">New Year</br> Letters </h3>
+              <p class="services__modal-description">
+                Selamat tahun baru Dinda🎉, ehh aku pengen ngucapin sesuatu nih hehe. Sekali kali alay sama lebay gpp ya😂. 
+                Jujur aku suka sama mu mungkin lu udah tau lah ya. Doodle yang kemarin itu emang tulus dariku. tau gak tanggal 
+                25 kemarin pas Minggu natal siang aku kan berdoa, salah satu doa ku tuh pengen penghiburan. Ehh pas sore nya lu 
+                ngechat selamat natal kan waktu itu, aku ngerasa udah terkabul doa ku itu. Waktu kau chat waktu itu aku kira itu
+                feedback yang kau kasih karena aku buat Doodle nya ternyata enggak. Terus kan Pengen nya kan aku sendiri tuh yang 
+                kasih samamu biar enakan gitu 😅, ehh malah opname pula abngku. aku bersyukur sih bisa kenalan sama mu. Hmm mungkin
+                itu aja sih yang bisa aku share. Kecapean ngetik hehe. Satu lagi, aku pengen ucapin semoga sukses di ujian nanti ya, 
+                pokoknya belajar mati" an nanti ya sampai bisa lulus negeri. Jangan nyesal di akhir gak bakal guna nantinya hehehe. 🙏❤️
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+<!-- ===================== WORK ================================ -->
+<section class="work section" id="work">
+  <span class="section__subtitle">Our Memories</span>
+  <h2 class="section__title">Gallery</h2>
+
+  <div class="work__filters">
+    <span class="work__item active-work" data-filter='all'>All</span>
+    <span class="work__item" data-filter='.bioskop'>Bioskop</span>
+    <span class="work__item" data-filter='.gift'>Gift</span>
+    <span class="work__item" data-filter='.dinda'>Dinda</span>
+  </div>
+
+  <div class="work__container container grid">
+    <div class="work__card mix bioskop">
+      <img src="diky1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Bioskop</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Profil</h3>
+          <p class="services__modal-description">
+           Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix bioskop">
+      <img src="bou2.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Bioskop</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix bioskop">
+      <img src="edrea&ernest1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Bioskop</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix bioskop">
+      <img src="edrea1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Bioskop</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Nama: Diky Arianto Tarihoran </br>
+           Umur: 20 Tahun </br>
+           Status: Berpacaran </br>
+          </br>
+          Hai, nama saya Diky Arianto Tarihoran. Saya merupakan anak bungsu dari keluarga ini serta menjadi developer dari website ini juga.
+          Saya lahir tanggal 15 Juni 2003 di Sibintang. Saya bermain Game saat ada waktu luang. Namun karena terlalu banyaknya wakru luang saya sering bermain Game :).
+          Saat ini saya berkuliah di Universitas Mercu Buana, jurusan Teknik Informatika. Hingga saat ini saya berfokus pada pembuatan website, serta sedang mendalami bagian Front End developer.
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix bioskop">
+      <img src="foto-bersama.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Bioskop</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Foto saat nonton bioskop tanggal 26 Desember 2022. Foto ini merupakan foto pertama kami selama berpacaran.
+            Foto ini akan menjadi hal yang paling tidak terlupakan dalam hidupku. Namun, setelah kita menonton bioskop, semua keluarga marah sehingga akan menjadi
+          hal pembelajaran bagi saya, agar meminta izin terlebih dahulu untuk nonton bioskop lagi😁. Tanggal 26 Desember 2022 menjadi First kiss Kami berdua ( lebih tepatnya
+        first kiss ku, karena dia malu untuk mencium saya :(</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="ernest2.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 sewaktu dicermin kamar mandi :) (sok imut ya...) </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="foto-bersama2.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 dengan full filter, katanya dia gak PD-an. Padahal aslinya manis banget :(</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="keluarga-entro.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda </h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 termanis yang pernah kuliat.</p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="keluarga-vera.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 tercantik yang pernah kuliat, gayanya sok imut ya padahal emang imut sih..😘 </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="vera1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 dengan pose bibir seksinya. </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="yuda1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 cosplay jadi wisudawan </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="foto-bersama4.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 yang jadi wallpaper WA saya😚 </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix gift">
+      <img src="bou2.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Gift</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini kado dan surat natal saya. </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix gift">
+      <img src="moment6.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Gift</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini kado dan surat natal my panda. </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="work__card mix dinda">
+      <img src="WhatsApp Image 2022-09-05 at 22.36.49.jpeg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Ini foto my Panda🐼 waktu lagi gabut, tetap manis ya😚. Sayangnya kalo gak pakai filter lebih manis lagi :( </br>
+          Kalo gak pakai filter gak berfoto namanya </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="work__card mix dinda">
+      <img src="/assets/img/dinda (drawing pencil).png" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Gambar my Panda🐼 dengan teknik drawing pencil </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="work__card mix dinda">
+      <img src="/assets/img/IG 1.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Dating Online/Moment bersama saat Video Call IG </p>
+
+        </div>
+      </div>
+    </div>
+
+
+    <div class="work__card mix dinda">
+      <img src="/assets/img/IG 2.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Dating Online/Moment bersama saat Video Call IG) </p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="work__card mix dinda">
+      <img src="/assets/img/IG 3.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Dating Online/Moment bersama saat Video Call IG </p>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="work__card mix dinda">
+      <img src="/assets/img/IG 4.jpg" alt="" class="work__img">
+
+      <h3 class="work__title">Dinda</h3>
+      <span class="services__button">
+        see more <i class="bx bx-right-arrow-alt services__icon"></i>
+      </span>
+
+      <div class="services__modal">
+        <div class="services__modal-content">
+          <i class='bx bx-x services__modal-close'></i>
+
+          <h3 class="services__modal-title">Kenangan</h3>
+          <p class="services__modal-description">
+            Dating Online/Moment bersama saat Video Call IG </p>
+
+        </div>
+      </div>
+    </div>
+
+
+  </div>
+</section>
+
+
+<!-- ============= TESTIMONIALS ==================== -->
+<section class="testimonial section">
+  <span class="section__subtitle">Our Comment</span>
+  <h2 class="section__title">Komentar</h2>
+
+  <div class="testimonial__container container swiper">
+    <div class="swiper-wrapper">
+    <div class="testimonial__card swiper-slide">
+      <img src="/assets/img/edrea1.jpg" alt="" class="testimonial__img">
+
+      <h3 class="testmonial__name">My future</h3>
+      <p class="testimonial__description">
+        Saya punya banyak rencana dikehidupan saya, namun prioritas hidup saya ialah menua bersama dengan dia.
+      </p>
+    </div>
+
+    <div class="testimonial__card swiper-slide">
+      <img src="/assets/img/dinda_1.jpg" alt="" class="testimonial__img">
+
+      <h3 class="testmonial__name">The Most Beautiful Girl</h3>
+      <p class="testimonial__description">
+        Saya adalah perempuan tercantik dikeluarga saya, saya beruntung dimiliki oleh seorang pria yang juga beruntung memiliki saya.
+      </p>
+    </div>
+
+    <div class="testimonial__card swiper-slide">
+      <img src="/assets/img/diky1.jpg" alt="" class="testimonial__img">
+
+      <h3 class="testmonial__name">Diky Arianto Tarihoran</h3>
+      <p class="testimonial__description">
+      Saya ganteng dan saya bangga.
+      </p>
+    </div>
+  </div>
+
+  <div class="swiper-pagination"></div>
+</div>
+</section>
+
+
+
+<!-- ============= CONTACT =================== -->
+
+<section class="contact section" id="contact">
+  <span class="section__subtitle">Get in touch</span>
+  <h2 class="section__title">Contact Me</h2>
+
+  <div class="contact__container container grid">
+    <div class="contact__content">
+      <h3 class="contact__title">Talk to me</h3>
+
+      <div class="contact__info">
+        <div class="contact__card">
+          <i class='bx bx-mail-send contact__card-icon'></i>
+          <h3 class="contact__card-title">Email</h3>
+          <span class="contact__card-data">dikytarihoran@gmail.com</span>
+
+          <a href="mailto:dikytarihoran@gmail.com" target="_blank" class="contact__button">
+            Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+          </a>
+        </div>
+
+        <div class="contact__card">
+          <i class='bx bxl-whatsapp contact__card-icon'></i>
+          <h3 class="contact__card-title">Whatsapp</h3>
+          <span class="contact__card-data">0823-7378-8641</span>
+
+          <a href="https://api.whatsapp.com/send?phone=6282373788641" target="_blank" class="contact__button">
+            Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+          </a>
+        </div>
+
+        <div class="contact__card">
+          <i class='bx bxl-messenger contact__card-icon'></i>
+          <h3 class="contact__card-title">Messenger</h3>
+          <span class="contact__card-data">Diky Arianto Tarihoran</span>
+          <a href="https://www.facebook.com/diky.a.tarihoran" target="_blank" class="contact__button">
+            Write me <i class='bx bx-right-arrow-alt contact__button-icon'></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  
+  <div class="contact__content">
+  <h3 class="contact__title">Write me your project</h3>
+
+  <form action="" class="contact__form">
+    <div class="contact__form-div">
+      <label for="" class="contact__form-tag">Names</label>
+      <input type="text" placeholder="Insert your name" class="contact__form-input">
+    </div>
+
+    <div class="contact__form-div">
+      <label for="" class="contact__form-tag">Mail</label>
+      <input type="email" placeholder="Insert your email" class="contact__form-input">
+    </div>
+
+    <div class="contact__form-div contact__form-area">
+      <label for="" class="contact__form-tag">Project</label>
+      <textarea name="" id="" cols="30" rows="10" placeholder="White your project" class="contact__form-input"></textarea>
+    </div>
+
+    <button class="button">Send Message</button>
+  </form>
+  </div>
+</div>
+</section>
+</main>
+
+
+<!-- ============== FOOTER ================= -->
+<footer class="footer">
+  <div class="footer__container container">
+    <h1 class="footer__title">Best Family </br>🐻   🐼 </h1>
+    <ul class="footer__list">
+      <li>
+        <a href="#about" class="footer__link">About</a>
+      </li>
+
+      <li>
+        <a href="#work" class="footer__link">Gallery</a>
+      </li>
+
+      <li>
+        <a href="#testimonial" class="footer__link">Memories</a>
+      </li>
+    </ul>
+
+    <ul class="footer__social">
+      <a href="https://www.facebook.com/diky.a.tarihoran" target="_blank" class="footer__social-link">
+        <i class='bx bxl-facebook' ></i>
+      </a>
+
+      <a href="https://www.instagram.com/dikyariantotarihoran/" target="_blank" class="footer__social-link">
+        <i class='bx bxl-instagram'></i>
+      </a>
+
+      <a href="https://twitter.com/dikytar" target="_blank" class="footer__social-link">
+        <i class='bx bxl-twitter'></i>
+      </a>
+    </ul>
+
+    <span class="footer__copy">
+      &#169; Diky Tarihoran. All rigths reserved
+    </span>
+  </div>
+</footer>
+
+
+<!-- ========== SCROLLLREVEAL ============== -->
+<script src="scrollreveal.min.js"></script>
+
+
+<!-- ================== SWIPER JS ================ -->
+<script src="swiper-bundle.min.js"></script>
+
+<!-- ====== MIXITUP FILTER ============ -->
+<script src="mixitup.min.js"></script>
+
+
+    <!-- ============== MAIN JS ====================== -->
+    <script src="main.js"></script>
+  </body>
+</html>
